@@ -33,8 +33,6 @@ SRHubProxy *myHub;
 
 - (void)notificationReceived:(id)name forMessage:(id)message
 {
-    //do something with the message
-    NSLog(@"%@",message);
     self.chatText.text = [NSString stringWithFormat:@"%@\n %@ - %@", self.chatText.text, name, message];
 }
 
